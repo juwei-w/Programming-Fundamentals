@@ -1194,7 +1194,7 @@ int main()
     int board_columns = 25;
     int zombie_counts = 5;
 
-    // game_setting(board_rows, board_columns, zombie_counts); // --- Get settings 
+    game_setting(board_rows, board_columns, zombie_counts); // --- Get settings 
 
     cout << endl;
     cout << "Main function value" << endl;
