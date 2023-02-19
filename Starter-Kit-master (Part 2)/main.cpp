@@ -3330,7 +3330,26 @@ public:
         }
         else if (command == "load")
         {
-            load();
+            string rply;
+            cout << "Do you want to save the progress now? (y/n)" << endl;
+            cout << "If no, the unsaved progress will be lost." << endl;
+            cout << "-->";
+            cin >> rply;
+            if (rply == "Y" || rply == "y")
+            {
+                save();
+                load();
+            }
+            else if (rply == "N" || rply == "n")
+            {
+                load();
+            }
+            else
+            {
+                cout << endl;
+                cout << "Invalid Input" << endl;
+                commands();
+            }
         }
         else if (command == "quit")
         {
