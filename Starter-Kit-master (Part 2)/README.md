@@ -3,11 +3,11 @@
 #### Game Introduction
 ![program_picture](Program.png)
 
-Alien vs Zombie is a game where an alien needs to defeat all zombie in a 2-dimension game board in order to win the game. At the start of the game, the alien will be placed in the middle of the game board while the zombies will be randomly generated. The player can choose to customize the game settings before the game begins. The customizeable settings are difficulty levels, rows and columns of the game board and the number of zombies. In the game there's a few game objects that helps alien to defeat zombies such as, health pack, pods and rock. Health packs adds 20 health points to alien, pods attacks the nearest zombie to it, rock stops alien from moving and drops a game object. Besides, there's also arrows that changes the direction of alien's movements and increases alien's attack by 20. Additionally, we've added a new game object 'spike' which is represented by '*'. It deals damage to alien when being approached.
+Alien vs Zombie is a game where an alien needs to defeat all zombie in a 2-dimension game board in order to win the game. At the start of the game, the alien will be placed in the middle of the game board while the zombies will be randomly generated. The player can choose to customize the game settings before the game begins. The customizeable settings are difficulty levels, rows and columns of the game board and the number of zombies. In the game there's a few game objects that helps alien to defeat zombies such as, health pack, pods and rock. Health packs adds 20 health points to alien, pods attacks the nearest zombie to it, rock stops alien from moving and drops a game object. Besides, there's also arrows that changes the direction of alien's movements and increases alien's attack by 20. Additionally, we've added a new game object 'spike' which is represented by '*'. It deals damage of 10 to alien when being approached.
 
 
 Part 1 >> [Youtube link](https://www.youtube.com/watch?v=pO5W0PhPbMc).
-Part 2 >> [Youtube link](https://www.youtube.com/watch?v=pO5W0PhPbMc).
+Part 2 >> [Youtube link](https://youtu.be/DpwxYc-8l2A).
 
 ## Compilation Instructions
 

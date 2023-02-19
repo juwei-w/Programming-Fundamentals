@@ -2,7 +2,7 @@
 
 ## Video Demo
 
-Please provide the YouTube link to your [Video Demo](https://youtube.com).
+Please provide the YouTube link to your [Video Demo](https://youtu.be/DpwxYc-8l2A).
 
 ---------------------------------------------------------------------------------------------------------------
 
@@ -61,7 +61,8 @@ Please provide the YouTube link to your [Video Demo](https://youtube.com).
 6. Limit zombie_count <= 5, rows_ & columns_ >= 3 ✅
 7. Prompt to replay when game over ✅
 8. Different game difficulties ✅
-9. Fixed arrow inputs and looping problem ✅
+9. Create a new game object (spike, deals damage to alien when being approached) ✅
+10. Fixed arrow inputs and looping problem ✅
 
 -- Jia Hen --
 1. Pods targets ONE closest zombie (maybe can save zombie position when creating) ✅
@@ -77,9 +78,9 @@ Please provide the YouTube link to your [Video Demo](https://youtube.com).
 4. Random value assigned to characters attributes should be sensible [ (life > attack) & (dimension > range) ] --- (DONE)
 5. Create a new game object (spike, deals damage to alien when being approached) --- (DONE)
 6. Different game difficulties (Normal / Hard) --- (DONE)
-7. Prevent zombies from going out of game board
-8. Prevent zombies from replacing alien, other zombies, and spikes
-9. Zombie can't move when it is blocked in all directions
+7. Prevent zombies from going out of game board --- (DONE)
+8. Prevent zombies from replacing alien, spikes, and zombies themselves --- (DONE)
+9. Zombie can't move when it is blocked in all directions --- (DONE)
 
 ---------------------------------------------------------------------------------------------------------------
 
@@ -101,7 +102,8 @@ Wong Ju Wei
 12. Limit zombie_count <= 5, rows_ & columns_ >= 3 
 13. Prompt to replay when game over 
 14. Different game difficulties
-15. Fixed arrow inputs and looping problem
+15. Create a new game object (spike, deals damage to alien when being approached)
+16. Fixed arrow inputs and looping problem
 
 Yap Rui Ern
 1. Alien and zombie character
@@ -109,7 +111,7 @@ Yap Rui Ern
 3. Change game board arrows
 4. Differentiate each zombies 
 6. Zombie move 
-7. Zombie attack 
+7. Zombie attack
 
 Lim Jia Hen
 1. Rock stops game characters from moving, discovers hidden item
