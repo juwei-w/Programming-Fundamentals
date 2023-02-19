@@ -3146,18 +3146,18 @@ public:
                 myFile << endl;
             }
 
-            myFile << alien_health << " " 
-                   << alien_attack << " " 
-                   << alien_row_ << " " 
+            myFile << alien_health << " "
+                   << alien_attack << " "
+                   << alien_row_ << " "
                    << alien_column_ << endl;
 
             for (int i = 0; i < zombie_counts_; i++)
             {
-                myFile << zombie[i].zombie_name << " " 
-                       << zombie[i].zombie_health << " " 
+                myFile << zombie[i].zombie_name << " "
+                       << zombie[i].zombie_health << " "
                        << zombie[i].zombie_attack << " "
-                       << zombie[i].zombie_range << " " 
-                       << zombie[i].zombie_row << " " 
+                       << zombie[i].zombie_range << " "
+                       << zombie[i].zombie_row << " "
                        << zombie[i].zombie_column << endl;
             }
             saved = true;
@@ -3180,13 +3180,14 @@ public:
         fstream myFile;
         filename = file + ".txt";
 
-        int board;
+        int a_att;
         string line;
         myFile.open(filename, ios::in);
 
         if (myFile.is_open())
         {
-            for (int lineNo = 1, i = 0; getline(myFile, line) && i < zombie_counts_; lineNo++)
+            display_game_board();
+            for (int lineNo = 1, i = 0, m = 0, n = 0; getline(myFile, line) && i < zombie_counts_; lineNo++, m < rows_, ++m, n < columns_, ++n)
             {
 
                 if (lineNo == 1)
@@ -3198,15 +3199,9 @@ public:
                     columns_ = column;
                     zombie_counts_ = zombie_num;
 
-                    cout << "Rows : " << rows_ << endl;
-                    cout << "Columns : " << columns_ << endl;
-                    cout << "Zombie : " << zombie_counts_ << endl;
+                    a_att = rows_ + 2;
                 }
-                // else if (lineNo < rows_ + 1)
-                // {
-                    
-                // }
-                else if (lineNo == 2)
+                else if (lineNo == a_att)
                 {
                     int a_hp, a_atk, a_row, a_column;
                     myFile >> a_hp >> a_atk >> a_row >> a_column;
@@ -3218,7 +3213,7 @@ public:
                     alien_turn = true;
                     alien_attribute();
                 }
-                else if (lineNo > 2)
+                else if (lineNo > a_att)
                 {
                     string z_name1, z_name2;
                     int z_hp, z_atk, z_range, z_row, z_column;
@@ -3230,7 +3225,7 @@ public:
                     zombie[i].zombie_range = z_range;
                     zombie[i].zombie_row = z_row;
                     zombie[i].zombie_column = z_column;
-                
+
                     cout << "    ";
                     cout << zombie[i].zombie_name << " : ";
                     cout << "Health = ";
@@ -3249,6 +3244,7 @@ public:
                     i++;
                 }
             }
+            commands();
         }
     }
 
